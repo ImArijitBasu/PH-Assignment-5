@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!--! fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--! daisy UI and tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        nav: 'rgb(249, 247, 243)',
+                        accent: 'rgb(180, 244, 97)',
+                    },
+                    fontFamily: {
+                        'lexend': 'Lexend',
+                    },
+                    backgroundImage: {
+                        image: '../assets/feni.png'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="rounded-2xl px-20">
+  <div class="flex flex-col justify-center items-center w-96 p-7 ">
+    <h3 class="text-5xl font-bold">Congrates!</h3>
+    <img class="w-10 mt-10 mb-10" src="assets/coin.png" alt="">
+    <p class="py-1">You Have Donated for Humankind</p>
+    <p class="py-1 font-bold text-xl">Successfully</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn font-bold text-lg">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
