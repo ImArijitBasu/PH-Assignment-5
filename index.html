@@ -71,13 +71,14 @@
     <div id="donationSection" class="container mx-auto px-4 space-y-8">
         <!--* card 1  -->
         <div
-            class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4 bg-[url('./assets/noakhali.png')] md:bg-none bg-no-repeat bg-cover bg-center text-white md:text-inherit">
+            class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4  bg-slate-600 md:bg-transparent bg-no-repeat bg-cover bg-center text-white md:text-inherit">
             <!-- left side  -->
             <div class="w-1/2 rounded-lg bg-[url('./assets/noakhali.png')] bg-no-repeat bg-cover bg-right-top">
+                <img class="md:hidden" src="./assets/noakhali.png" alt="">
             </div>
             <!-- right side  -->
             <div class="w-full md:w-1/2">
-                <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
+                <div class="bg-slate-600 md:bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                     <img src="assets/coin.png" alt="">
                     <p id="firstDonateAmount" >0</p>
                     <p>BDT</p>
@@ -92,7 +93,7 @@
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.</p>
                 </div>
-                <input id="firstInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+                <input id="firstInput" class="text-black mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                     placeholder="Write Donation Amount"> <br>
                 <div id="firstDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
             </div>
@@ -100,13 +101,14 @@
 
         <!--* card 2  -->
         <div
-            class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4 bg-[url('./assets/feni.png')] md:bg-none bg-no-repeat bg-cover bg-center text-white md:text-inherit">
+            class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4 bg-slate-600 md:bg-transparent bg-no-repeat bg-cover bg-center text-white md:text-inherit">
             <!-- left side  -->
             <div class="w-1/2 rounded-lg bg-[url('./assets/feni.png')] bg-no-repeat bg-cover bg-right-top">
+                <img class="md:hidden" src="./assets/feni.png" alt="">
             </div>
             <!-- right side  -->
             <div class="w-full md:w-1/2">
-                <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
+                <div class="bg-slate-600 md:bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                     <img src="assets/coin.png" alt="">
                     <p id="secondDonateAmount">0</p>
                     <p>BDT</p>
@@ -117,20 +119,21 @@
                     </h1>
                     <p class="font-light leading-6 pt-4">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 </div>
-                <input id="secondInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+                <input id="secondInput" class="text-black mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                     placeholder="Write Donation Amount"> <br>
                 <div id="secondDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
             </div>
         </div>
         <!--* card 3  -->
         <div
-        class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4 bg-[url('./assets/quota-protest.png')] md:bg-none bg-no-repeat bg-cover bg-center text-white md:text-inherit">
+        class="flex flex-col md:flex-row p-8 border border-gray-300 rounded-2xl gap-4 bg-slate-600 md:bg-transparent bg-no-repeat bg-cover bg-center text-white md:text-inherit">
         <!-- left side  -->
         <div class="w-1/2 rounded-lg bg-[url('./assets/quota-protest.png')] bg-no-repeat bg-cover bg-right-top">
+            <img class="md:hidden" src="./assets/quota-protest.png" alt="">
         </div>
         <!-- right side  -->
         <div class="w-full md:w-1/2">
-            <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
+            <div class="bg-slate-600 md:bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                 <img src="assets/coin.png" alt="">
                 <p id="thirdDonateAmount">0</p>
                 <p>BDT</p>
@@ -140,7 +143,7 @@
                     Aid for Injured in the Quota Movement                </h1>
                 <p class="font-light leading-6 pt-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
             </div>
-            <input id="thirdInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+            <input id="thirdInput" class="text-black mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                 placeholder="Write Donation Amount"> <br>
             <div id="thirdDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
         </div>
@@ -158,7 +161,7 @@
 <!--* modal  -->
 
 <dialog id="my_modal_1" class="rounded-2xl px-20">
-    <div class="flex flex-col justify-center items-center w-96 p-7 ">
+    <div class="flex flex-col justify-center items-center max-w-96 p-7 ">
       <h3 class="text-5xl font-bold">Congrates!</h3>
       <img class="w-10 mt-10 mb-10" src="assets/coin.png" alt="">
       <p class="py-1">You Have Donated for Humankind</p>
