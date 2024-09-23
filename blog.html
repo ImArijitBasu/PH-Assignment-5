@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!--! fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--! daisy UI and tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        nav: 'rgb(249, 247, 243)',
+                        accent: 'rgb(180, 244, 97)',
+                    },
+                    fontFamily: {
+                        'lexend': 'Lexend',
+                    },
+                    backgroundImage: {
+                        image: '../assets/feni.png'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--* navbar  -->
+    <nav class="z-20 pt-2 pb-3 sticky -top-2 backdrop-blur-lg backdrop-saturate-100 bg-nav/50 md:bg-nav">
+        <div class="navbar container mx-auto flex justify-between flex-col md:flex-row items-end md:items-center">
+            <div class="w-full md:w-auto">
+                <a href="./index.html">
+                    <div class="btn bg-accent text-lg font-semibold">↵ back</div>
+                </a>
+            </div>
+            <div class=" py-5">
+                <img class="w-12" src="assets/logo.png" alt="">
+                <a class="text-3xl md:text-xl font-semibold px-2 tracking-widest md:tracking-normal">Donate
+                    Bangladesh</a>
+            </div>
+            <div class="fixed md:static bg-slate-100 md:bg-inherit p-2 rounded top-0 right-0">
+                <img src="assets/coin.png" alt="">
+                <p id="balance" class="px-1 font-bold text-xl">____</p>
+                <p>BDT</p>
+            </div>
+        </div>
+    </nav>
+<main class="container mx-auto my-10 font-mono space-y-5">
+    <div class="text-4xl font-extrabold text-amber-400">FREEQUENTLY ASKED QUESTIONS! 😎↷</div>
+    <!-- question 1 -->
+    <div class="bg-base-200 collapse">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-accent text-black peer-checked:bg-secondary peer-checked:text-secondary-content font-bold text-xl">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div
+          class="collapse-content bg-nav  text-black peer-checked:bg-secondary peer-checked:text-secondary-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects. Each element, attribute, and piece of content in the document becomes a node that can be manipulated with programming languages like JavaScript.</p>
+        </div>
+      </div>
+    <!-- question 2 -->
+    <div class="bg-base-200 collapse">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-accent text-black peer-checked:bg-secondary peer-checked:text-secondary-content font-bold text-xl">
+          How do you select an element from the DOM?
+        </div>
+        <div
+          class="collapse-content bg-nav  text-black peer-checked:bg-secondary peer-checked:text-secondary-content">
+          <p>To select an element from the DOM, you can use various JavaScript methods:
+            <br>
+            1. **`getElementById()`**: Selects an element by its unique ID. <br>
+            2. **`getElementsByClassName()`**: Selects all elements that share a specific class name. <br>
+            3. **`getElementsByTagName()`**: Selects all elements with a particular tag name. <br>
+            4. **`querySelector()`**: Selects the first element that matches a specified CSS selector. <br>
+            5. **`querySelectorAll()`**: Selects all elements that match a specified CSS selector. <br>
+            <br>
+            Each method is useful depending on how the elements are identified within the document.</p>
+        </div>
+      </div>
+    <!-- question 3 -->
+    <div class="bg-base-200 collapse">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-accent text-black peer-checked:bg-secondary peer-checked:text-secondary-content font-bold text-xl">
+        What is event delegation in the context of the DOM, and why is it useful?
+        </div>
+        <div
+          class="collapse-content bg-nav  text-black peer-checked:bg-secondary peer-checked:text-secondary-content">
+          <p>**Event delegation** is a technique in the DOM where a single event listener is added to a parent element instead of adding multiple listeners to individual child elements. The event listener on the parent can capture events triggered by its child elements through **event bubbling**.
+            <br> <br>
+            ### How it works: <br> 
+            When an event occurs on a child element, it "bubbles up" through its ancestors. By placing the event listener on a common parent, you can catch events from child elements and handle them using the `event.target` property to determine which child triggered the event.
+            <br> <br>
+            ### Why event delegation is useful: <br>
+            1. **Efficiency**: Instead of attaching multiple event listeners to several child elements, you can attach one listener to a common parent, reducing memory usage and improving performance. <br>
+            2. **Dynamic Content**: It handles events for dynamically added elements without needing to reassign event listeners to new elements. <br>
+            3. **Simpler Code**: It simplifies the event-handling code, especially when working with many similar child elements.
+            <br> <br>
+            Event delegation is especially useful for lists, tables, or any elements that are frequently added, removed, or modified dynamically.</p>
+        </div>
+      </div>
+    <!-- question 4 -->
+    <div class="bg-base-200 collapse">
+        <input type="checkbox" class="peer" />
+        <div
+          class="collapse-title bg-accent text-black peer-checked:bg-secondary peer-checked:text-secondary-content font-bold text-xl">
+          How do you manipulate an element's attributes and styles using the DOM?
+        </div>
+        <div
+          class="collapse-content bg-nav  text-black peer-checked:bg-secondary peer-checked:text-secondary-content">
+          <p>To manipulate an element's attributes and styles using the DOM, you can use various properties and methods provided by JavaScript:
+            <br> <br>
+            ### Manipulating Attributes:
+            1. **`setAttribute()`**: To set an attribute's value. <br>
+            2. **`getAttribute()`**: To retrieve the value of an attribute. <br>
+            3. **`removeAttribute()`**: To remove an attribute from an element. <br>
+            4. **Direct Property Access**: For common attributes like `id`, `class`, `value`, etc., you can access them directly as properties of the element. <br>
+            <br>
+            ### Manipulating Styles: <br>
+            1. **`style` Property**: You can change an element's inline styles by accessing the `style` property and setting individual CSS properties (e.g., `element.style.color = 'red';`). <br>
+            2. **`classList` Property**: To add, remove, or toggle classes on an element, you can use methods like `add()`, `remove()`, and `toggle()` on the `classList` property. <br>
+            <br>
+            Using these methods, you can dynamically change both the attributes and styles of DOM elements based on user interactions or other conditions in your JavaScript code.</p>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-amber-400 py-5">WANT TO KNOW MORE ?</div>
+      <a target="_blank" href="https://openai.com/chatgpt/">
+          <div class="btn w-full uppercase font-bold text-lg bg-nav hover:bg-accent hover:text-white">ask me !!! 😁</div>
+      </a>
+      <h1 class="text-center font-bold text-amber-400">OR</h1>
+      <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">
+        <div class="btn w-full uppercase font-bold text-lg bg-nav hover:bg-accent hover:text-white">read me !!! 😁</div>
+    </a>
+</main>
+    <footer class="h-32 bg-nav mt-0 sticky bottom-0"></footer>
+</body>
+
+</html>
