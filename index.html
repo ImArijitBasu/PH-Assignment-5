@@ -52,7 +52,7 @@
             </div>
             <div class="fixed md:static bg-slate-100 md:bg-inherit p-2 rounded top-0 right-0">
                 <img src="assets/coin.png" alt="">
-                <p class="px-1 font-bold text-xl">5500</p>
+                <p id="balance" class="px-1 font-bold text-xl">5500</p>
                 <p>BDT</p>
             </div>
         </div>
@@ -74,9 +74,9 @@
             </div>
             <!-- right side  -->
             <div class="w-full md:w-1/2">
-                <div class="bg-gray-200 w-28 flex space-x-3 px-2 py-1 rounded-lg">
+                <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                     <img src="assets/coin.png" alt="">
-                    <p>0</p>
+                    <p id="firstDonateAmount" >0</p>
                     <p>BDT</p>
                 </div>
                 <div class=" pt-4">
@@ -89,9 +89,9 @@
                         contribution, big or small, makes difference. Please join us in supporting the relief efforts
                         and making a positive impact on the lives of those in need.</p>
                 </div>
-                <input class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+                <input id="firstInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                     placeholder="Write Donation Amount"> <br>
-                <div class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
+                <div id="firstDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
             </div>
         </div>
 
@@ -103,9 +103,9 @@
             </div>
             <!-- right side  -->
             <div class="w-full md:w-1/2">
-                <div class="bg-gray-200 w-28 flex space-x-3 px-2 py-1 rounded-lg">
+                <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                     <img src="assets/coin.png" alt="">
-                    <p>0</p>
+                    <p id="secondDonateAmount">0</p>
                     <p>BDT</p>
                 </div>
                 <div class=" pt-4">
@@ -114,9 +114,9 @@
                     </h1>
                     <p class="font-light leading-6 pt-4">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 </div>
-                <input class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+                <input id="secondInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                     placeholder="Write Donation Amount"> <br>
-                <div class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
+                <div id="secondDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
             </div>
         </div>
         <!--* card 3  -->
@@ -127,9 +127,9 @@
         </div>
         <!-- right side  -->
         <div class="w-full md:w-1/2">
-            <div class="bg-gray-200 w-28 flex space-x-3 px-2 py-1 rounded-lg">
+            <div class="bg-gray-200 w-fit flex space-x-3 px-2 py-1 rounded-lg">
                 <img src="assets/coin.png" alt="">
-                <p>0</p>
+                <p id="thirdDonateAmount">0</p>
                 <p>BDT</p>
             </div>
             <div class=" pt-4">
@@ -137,9 +137,9 @@
                     Aid for Injured in the Quota Movement                </h1>
                 <p class="font-light leading-6 pt-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
             </div>
-            <input class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
+            <input id="thirdInput" class="mt-6 px-6 py-5 w-full border border-gray-300 rounded-lg text-xl" type="number"
                 placeholder="Write Donation Amount"> <br>
-            <div class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
+            <div id="thirdDonate" class="btn text-xl font-semibold mt-4 btn-lg bg-accent w-full">Donate Now</div>
         </div>
     </div>
     </div>
@@ -174,7 +174,9 @@
     </div>
   </dialog>
 
-  
+  <!-- script files  -->
+<script src="./js/utility.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
