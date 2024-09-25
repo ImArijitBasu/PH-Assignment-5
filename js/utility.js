@@ -2,9 +2,9 @@
 
 function handleDonation(inputId, balanceId, donateAmountId , titleId) {
     const balanceText = document.getElementById(balanceId).innerText;
-    let balance = parseInt(balanceText);
+    let balance = parseFloat(balanceText);
 
-    const donation = parseInt(document.getElementById(inputId).value);
+    const donation = parseFloat(document.getElementById(inputId).value);
     if (isNaN(donation) || donation === null || donation <= 0) {
         alert('Input a valid donation amount');
         return;
@@ -15,7 +15,7 @@ function handleDonation(inputId, balanceId, donateAmountId , titleId) {
     }
     balance = balance - donation;
     document.getElementById(balanceId).innerText = balance;
-    const donateAmount = parseInt(document.getElementById(donateAmountId).innerText);
+    const donateAmount = parseFloat(document.getElementById(donateAmountId).innerText);
     const newAmount = donateAmount + donation;
     document.getElementById(donateAmountId).innerText = newAmount;
     const modal = document.getElementById('my_modal_1')
@@ -32,6 +32,7 @@ function handleDonation(inputId, balanceId, donateAmountId , titleId) {
             </div>
     `
     historyDiv.appendChild(newDiv);
+    document.getElementById(inputId).value = '';
 }
 
 
